@@ -88,7 +88,8 @@ class Spider:
         try:
             users = resp['comments']
             for user in users:
-                content = user['content']
+                # 对内容进行编码和解码以处理编码问题
+                content = user['content'].encode('utf-8').decode('utf-8', 'ignore')
                 created_at = user['timeStr']
                 username = user['user']['nickname']
                 likes = user['likedCount']
