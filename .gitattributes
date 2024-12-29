@@ -1,9 +1,0 @@
-# 将所有 .py 文件标记为 Python
-*.py linguist-language=Python
-
-# 将所有 .js 文件标记为 JavaScript
-*.js linguist-language=JavaScript
-
-# 排除某些文件或文件夹不被检测
-path/to/excluded/file linguist-vendored
-path/to/excluded/folder/* linguist-vendored
