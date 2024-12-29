@@ -5,5 +5,5 @@
 *.js linguist-language=JavaScript
 
 # 排除某些文件或文件夹不被检测
-path/to/excluded/file linguist-vendored
-path/to/excluded/folder/* linguist-vendored
+output linguist-vendored
+output/* linguist-vendored
